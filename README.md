@@ -4,10 +4,8 @@ Dispatch is a Python 3 script that syncs the current weekly edition of The Econo
 
 This can be used as an alternative to the Economist iOS app for reading the digital version of the Economist on macOS and iOS, and makes it easy to search through articles. It requires that you have access to the digital version of the Economist.
 
-![image](images/mac-reader-view.png | width=300)
-![image](images/ios-reader-view.png | width=100)
-
-![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+<img src="images/mac-reader-view.png" width="300">    
+<img src="images/ios-reader-view.png" width="100">
 
 ## Requirements
 
