@@ -32,6 +32,8 @@ This will sync all of the current weeks articles for the Economist into the Read
 
 The articles may take a couple of minutes to sync, but you can begin to read them immediately.
 
+Tip, if you press **CMD-SHIFT-R** when viewing the article, it will format the article in Reader mode which makes it much easier to read.
+
 ### Sync with iOS
 
 If you would like to have the reading list synced with Safari on iOS, enabled iCloud syncing for Safari on iOS and macOS by following the instructions at:
