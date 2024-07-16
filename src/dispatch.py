@@ -26,11 +26,13 @@ import re
 import subprocess
 import sys
 
+VERSION = "0.85.1"
+
 BASE_URL = "https://www.economist.com"
 WEEKLY_URL = f"{BASE_URL}/weeklyedition/"
 
 #User agent for the request to the economist
-USER_AGENT = "Dispatch/1.0"
+user_agent = "Dispatch/0.85.1"
 
 should_print_urls = False
 verbose = False
@@ -101,8 +103,13 @@ def print_urls(urls):
         print(u)
 
 def load_url_content(url):
+
+    if verbose:
+        print(f"Loading url : {url}")
+        print(f"User Agent : {user_agent}")
+
     headers = {
-        'User-Agent': USER_AGENT
+        'User-Agent': user_agent
     }
     response = requests.get(url, headers=headers)
     if response.status_code == 200:
@@ -112,19 +119,32 @@ def load_url_content(url):
 
 if __name__ == "__main__":
     # Initialize the argument parser
-    parser = argparse.ArgumentParser(description="Add current weeks articles in The Economist to Safari reader mode.")
+    parser = argparse.ArgumentParser(description="Add current weeks articles in The Economist to Safari reading list.")
+
+    parser.add_argument('--version', dest='version', 
+                        action='store_true', 
+                        help='Display current version.')
 
     parser.add_argument('--print', dest='print_urls', 
                         action='store_true', 
-                        help='Runs in print mode and will only print out the urls for current issue.')
+                        help='Display urls of current issue without adding to reading list.')
     
     parser.add_argument('--verbose', dest='verbose', 
                         action='store_true', 
-                        help='Print out additional information as script runs.')
-
-    #pass in user_agent
+                        help='Display additional information as script runs.')
+    
+    parser.add_argument("--user-agent", dest="user_agent", required=False, 
+                        help="The user agent to use when retrieving pages from the Economist website.")
 
     args = parser.parse_args()
+
+    if args.version:
+        print(f"Dispatch version : {VERSION}")
+        print("https://github.com/mikechambers/dispatch")
+        sys.exit()
+
+    if args.user_agent != None:
+        user_agent = args.user_agent
 
     should_print_urls = args.print_urls
     verbose = args.verbose
