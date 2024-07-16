@@ -2,9 +2,11 @@
 
 Dispatch is a Python 3 script that syncs the current weekly edition of The Economist into reader mode for the Apple Safari browser on macOS and iOS.
 
-This can be used as an alternative to the Economist iOS app for reading the digital version of the Economist on macOS and iOS, and makes it easy to search through articles. It requires that you have access to the digital version of the Economist.
+This can be used as an alternative to the Economist iOS app for reading the digital version of the Economist on macOS and iOS, and makes it easy to search through articles.
 
 <img src="images/mac-reader-view.png" width="300"> <img src="images/ios-reader-view.png" width="95">
+
+This project requires that you have access to the digital version of the Economist, and is not affiliated with or supported by The Economist.
 
 ## Requirements
 
@@ -24,7 +26,7 @@ python3 dispatch.py --help
 
 On macOS make sure you are logged into the Economist (https://www.economist.com/) in Safari.
 
-If you want the articles to be synced to your machine, and available to read offline, go to Safari > Settings > Advanced and make sure that *Save articles for offline reading automatically* is checked.
+If you want the articles to be synced to your machine, and available to read offline, go to *Safari > Settings > Advanced* and make sure that *Save articles for offline reading automatically* is checked.
 
 Download the dispatch.py script, and place it in a location you will remember.
 
@@ -61,6 +63,14 @@ python3 dispatch.py --print
 ```
 
 This will print out the URL for each article in the current edition, with one url per line.
+
+## Known Issues
+
+On macOS, sometimes the thumbnails for the page will not load, but if you click the article you can still read it.
+
+On macOS, sometimes the article will not show in Reader view. You can enable if with **CMD-SHIFT-R**
+
+When syncing between macOS and iOS, there will sometimes be duplicate posts on macOS. (Safari sync bug?)
 
 ## Questions, Feature Requests, Feedback
 
