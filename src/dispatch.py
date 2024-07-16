@@ -123,18 +123,18 @@ if __name__ == "__main__":
 
     parser.add_argument('--version', dest='version', 
                         action='store_true', 
-                        help='Display current version.')
+                        help='display current version')
 
     parser.add_argument('--print', dest='print_urls', 
                         action='store_true', 
-                        help='Display urls of current issue without adding to reading list.')
+                        help='display urls of current issue without adding to reading list')
     
     parser.add_argument('--verbose', dest='verbose', 
                         action='store_true', 
-                        help='Display additional information as script runs.')
+                        help='display additional information as script runs')
     
     parser.add_argument("--user-agent", dest="user_agent", required=False, 
-                        help="The user agent to use when retrieving pages from the Economist website.")
+                        help="the user agent to use when retrieving pages from the Economist website")
 
     args = parser.parse_args()
 

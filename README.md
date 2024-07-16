@@ -12,6 +12,12 @@ This can be used as an alternative to the Economist iOS app for reading the digi
 
 ## Usage
 
+You can view all options and modes by running:
+
+```bash
+python3 dispatch.py --help
+```
+
 ### Setup on macOS
 
 On macOS make sure you are logged into the Economist (https://www.economist.com/) in Safari.
