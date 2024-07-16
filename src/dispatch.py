@@ -120,7 +120,7 @@ if __name__ == "__main__":
     
     parser.add_argument('--verbose', dest='verbose', 
                         action='store_true', 
-                        help='Runs in print mode and will only print out the urls for current issue.')
+                        help='Print out additional information as script runs.')
 
     #pass in user_agent
 
