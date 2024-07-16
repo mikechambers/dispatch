@@ -53,7 +53,7 @@ SECTIONS = [
     "/finance-and-economics/",
     "/science-and-technology/",
     "/culture/",
-    "/economic-and-financial-indicators/s",
+    "/economic-and-financial-indicators/",
     "/obituary/"
 ]
 
