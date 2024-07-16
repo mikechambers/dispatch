@@ -1,5 +1,5 @@
 # Copyright (c) 2024 Mike Chambers
-# https://github.com/mikechambers/firefly-cl
+# https://github.com/mikechambers/dispatch
 #
 # MIT License
 #
