@@ -1,6 +1,6 @@
 # Dispatch
 
-Dispatch is a Python 3 script that syncs the current weekly edition of The Economist into reader mode for the Apple Safari browser.
+Dispatch is a Python 3 script that syncs the current weekly edition of The Economist into reader mode for the Apple Safari browser on macOS and iOS.
 
 This can be used as an alternative to the Economist iOS app for reading the digital version of the Economist on macOS and iOS. It requires that you have access to the digital version of the Economist.
 
@@ -20,7 +20,9 @@ If you want the articles to be synced to your machine, and available to read off
 
 Download the dispatch.py script, and place it in a location you will remember.
 
-Run the script with the following command:
+### Sync to Reading mode on macOS
+
+Open the terminal application, switch to the directory where the script is saved, and then run the script with the following command:
 
 ```bash
 python3 dispatch.py
@@ -40,11 +42,21 @@ View this article for information on how to view Reading List in Safari on iOS, 
 
 https://support.apple.com/en-us/108970
 
+### Print all article URLs
+
+If you would like to just get a list the URLs for all of the articles for the current edition, then call the script and set the **print** flag like so:
+
+```bash
+python3 dispatch.py --print
+```
+
+This will print out the URL for each article in the current edition, with one url per line.
+
 ## Questions, Feature Requests, Feedback
 
 If you have any questions, feature requests, need help, or just want to chat, you can ping me on [Twitter](https://twitter.com/mesh) or via email at [mikechambers@gmail.com](mailto:mikechambers@gmail.com).
 
-You can also log bugs and feature requests on the [issues page](https://github.com/mikechambers/firefly-cl/issues).
+You can also log bugs and feature requests on the [issues page](https://github.com/mikechambers/dispatch/issues).
 
 ## License
 
